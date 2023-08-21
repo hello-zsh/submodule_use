@@ -1,15 +1,17 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import ChildButton from 'common/components/button.vue'
-import { judgeIsEqual } from 'common/libs/util.js'
+import { judgeIsEqual, formatNumber } from 'common/libs/util.js'
 
 const isFlag = ref(false)
+const number = ref(123456789)
 
 function testCommonFun() {
   return judgeIsEqual(1, 1)
 }
 onMounted(() => {
   isFlag.value = testCommonFun()
+  number.value = formatNumber(number.value)
 })
 
 </script>
@@ -17,6 +19,7 @@ onMounted(() => {
 <template>
   <ChildButton/>
   {{ isFlag }}
+  {{ number }}
 </template>
 
 <style scoped>
