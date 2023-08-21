@@ -22,3 +22,8 @@ export const verifySmallLetter = string => {
   const regx = /[a-z]/
   return regx.test(string)
 }
+
+export const verifyLetter = string => {
+  const regx = /[a-zA-Z]/
+  return regx.test(string)
+}
