@@ -14,6 +14,11 @@ export const verifyNumber = string => {
 }
 
 export const verifyCapitalLetter = string => {
-  const regx = /[A-Z]/s
+  const regx = /[A-Z]/
   return regx.test(string);
+}
+
+export const verifySmallLetter = string => {
+  const regx = /[a-z]/
+  return regx.test(string)
 }
