@@ -31,6 +31,3 @@ export const verifyLetter = string => {
 // test git subtree 
 // test different branch push
 
-// here is change 1 from feature-v1.0-testPush
-
-// here is change 2 from feature-v1.0-testPush
