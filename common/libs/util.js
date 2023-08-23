@@ -27,8 +27,3 @@ export const verifyLetter = string => {
   const regx = /[a-zA-Z]/
   return regx.test(string)
 }
-
-// test git subtree 
-// test different branch push
-
-// test push in featyndndndndnd
