@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "subtreePush:self": "git subtree push --prefix=common common feature-v1.0-testPush",
+    "subtreePush:main": "git subtree push --prefix=common common main",
+    "subtreePull": "git subtree pull --prefix=common common main"
   },
   "dependencies": {
     "lodash": "^4.17.21",
